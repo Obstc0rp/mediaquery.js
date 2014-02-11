@@ -10,7 +10,7 @@ This is a full JavaScript library for media queries as known from CSS3 but for J
 
 To start you just need an object with some of the following attributes. Just use those you need.
 
-`
+```
 var myMediaObject = {
     before: function(){console.log('before')},
  	after: function(){console.log('after')},
@@ -19,7 +19,7 @@ var myMediaObject = {
  	resizeMD: function(){console.log('md')},
  	resizeLG: function(){console.log('lg')}
 }
-mediaqueryjs.mediaQueryAdd(myMediaObject);`
+mediaqueryjs.mediaQueryAdd(myMediaObject);```
 
 ### Attribute List
 
@@ -47,8 +47,12 @@ Default values are:
 ## API
 
 `mediaQueryAdd(object)` adds an object which provides functions for the different sizes.
+
 `mediaQueryRemove(object)` for the unlikly case an object has to be removed.
+
 `setMaxXSWidth(width)` sets the max width for extra small devices.
+
 `setMaxSMWidth(width)` sets the max width for small devices.
+
 `setMaxMDWidth(width)` sets the max width for medium devices.
 
