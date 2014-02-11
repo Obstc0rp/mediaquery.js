@@ -1,5 +1,4 @@
 // JavaScript Document
-
 var myMediaObject = {
 	before: vorher,
 	after: nachher,
@@ -37,4 +36,4 @@ function gross(){
     document.getElementById('pTest').innerHTML = 'gross';
 }
 
-resizableObjects.push(myMediaObject);
+mediaqueryjs.mediaQueryAdd(myMediaObject);
