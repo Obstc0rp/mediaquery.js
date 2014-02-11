@@ -19,7 +19,8 @@ var myMediaObject = {
  	resizeMD: function(){console.log('md')},
  	resizeLG: function(){console.log('lg')}
 }
-mediaqueryjs.mediaQueryAdd(myMediaObject);```
+mediaqueryjs.mediaQueryAdd(myMediaObject);
+```
 
 ### Attribute List
 
