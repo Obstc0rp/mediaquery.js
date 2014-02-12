@@ -12,6 +12,7 @@ To start you just need an object with some of the following attributes. Just use
 
 ```
 var myMediaObject = {
+    initialize: function(console.log('init')},
     before: function(){console.log('before')},
  	after: function(){console.log('after')},
  	resizeXS: function(){console.log('xs')},
@@ -24,6 +25,7 @@ mediaqueryjs.mediaQueryAdd(myMediaObject);
 
 ### Attribute List
 
+- **initialize** function - will be fired once when the DOM tree is loaded (window.onload)
 - **before** function - will be fired at first
 - **after** function - will be fired at last
 - **resizeXS** function - if defined, will be fired on extra small devices. otherwise the next bigger defined function will be fired.
