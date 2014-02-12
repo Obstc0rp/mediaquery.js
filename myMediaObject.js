@@ -1,11 +1,16 @@
 // JavaScript Document
 var myMediaObject = {
+    initialize: init,
 	before: vorher,
 	after: nachher,
 	resizeXS: extraKlein,
 	resizeSM: klein,
 	resizeMD: mittel,
 	resizeLG: gross
+}
+
+function init(){
+    console.log('init');
 }
 
 function vorher(){

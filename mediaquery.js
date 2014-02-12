@@ -1,6 +1,7 @@
 window.mediaqueryjs = (function(){
     window.onload = function(){ //TODO: check if there is a better function
 
+        initialize();
         window.onresize = mediaResize;
         mediaResize();
     };
@@ -18,6 +19,18 @@ window.mediaqueryjs = (function(){
     var sm = 991;
     var md = 1199;
     //var lg = rest;
+
+    //----------------------- initialize function -------------------//
+
+    /**
+     * This function is only called once when the DOM tree is loaded (window.onload).
+     */
+    function initialize(){
+        for(var i = 0; i < resizableObjects.length; i++){
+            if(resizableObjects[i].initialize)
+                resizableObjects[i].initialize();
+        }
+    }
 
     //------------------------- resize function -------------------//
     /**
