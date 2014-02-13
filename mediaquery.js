@@ -1,10 +1,11 @@
 window.mediaqueryjs = (function(){
-    window.onload = function(){ //TODO: check if there is a better function
-
-        initialize();
-        window.onresize = mediaResize;
-        mediaResize();
-    };
+    document.onreadystatechange = function () {
+        if (document.readyState == "complete") {
+            initialize();
+            window.onresize = mediaResize;
+            mediaResize();
+        }
+    }
 
     var mediaqueryjs = {
         mediaQueryAdd: mediaQueryAdd,
