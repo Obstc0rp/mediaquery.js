@@ -25,7 +25,7 @@ mediaqueryjs.mediaQueryAdd(myMediaObject);
 
 ### Attribute List
 
-- **initialize** function - will be fired once when the DOM tree is loaded (window.onload)
+- **initialize** function - will be fired once when the DOM tree is loaded
 - **before** function - will be fired at first
 - **after** function - will be fired at last
 - **resizeXS** function - if defined, will be fired on extra small devices. otherwise the next bigger defined function will be fired.
