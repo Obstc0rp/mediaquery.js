@@ -1,44 +1,44 @@
 // JavaScript Document
 var myMediaObject = {
     initialize: init,
-	before: vorher,
-	after: nachher,
-	resizeXS: extraKlein,
-	resizeSM: klein,
-	resizeMD: mittel,
-	resizeLG: gross
+	before: before,
+	after: after,
+	resizeXS: extraSmall,
+	resizeSM: small,
+	resizeMD: medium,
+	resizeLG: large
 }
 
 function init(){
     console.log('init');
 }
 
-function vorher(){
-	console.log('vorher');
+function before(){
+	console.log('before');
 }
 
-function nachher(){
-	console.log('nachher');	
+function after(){
+	console.log('after');	
 }
 
-function extraKlein(){
-	console.log('extra klein');
-    document.getElementById('pTest').innerHTML = 'extra klein';
+function extraSmall(){
+	console.log('extra small');
+    document.getElementById('pTest').innerHTML = 'extra small';
 }
 
-function klein(){
-	console.log('klein');
-    document.getElementById('pTest').innerHTML =  'klein';
+function small(){
+	console.log('small');
+    document.getElementById('pTest').innerHTML =  'small';
 }
 
-function mittel(){
-	console.log('mittel');
-    document.getElementById('pTest').innerHTML = 'mittel';
+function medium(){
+	console.log('medium');
+    document.getElementById('pTest').innerHTML = 'medium';
 }
 
-function gross(){
-	console.log('gross');
-    document.getElementById('pTest').innerHTML = 'gross';
+function large(){
+	console.log('large');
+    document.getElementById('pTest').innerHTML = 'large';
 }
 
 mediaqueryjs.mediaQueryAdd(myMediaObject);
